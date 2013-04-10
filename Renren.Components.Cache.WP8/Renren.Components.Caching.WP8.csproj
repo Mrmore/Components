@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3A98F1DC-5AB2-4D05-9F3D-2F3225CD7317}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Renren.Components.Cache.WP8</RootNamespace>
+    <AssemblyName>Renren.Components.Cache.WP8</AssemblyName>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\Renren.Components.Cache.Win8\BackgroundScheduler.cs">
+      <Link>BackgroundScheduler.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.Cache.Win8\BackingStore\BaseBackingStore.cs">
+      <Link>BackingStore\BaseBackingStore.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.Cache.Win8\BackingStore\NullBackingStore.cs">
+      <Link>BackingStore\NullBackingStore.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.Cache.Win8\BackingStore\StorageBackingStore.cs">
+      <Link>BackingStore\StorageBackingStore.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.Cache.Win8\BackingStore\StorageCacheItem.cs">
+      <Link>BackingStore\StorageCacheItem.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.Cache.Win8\BackingStore\StorageCacheItemField.cs">
+      <Link>BackingStore\StorageCacheItemField.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.Cache.Win8\BackingStore\StorageEncryptionProvider.cs">
+      <Link>BackingStore\StorageEncryptionProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.Cache.Win8\Cache.cs">
+      <Link>Cache.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.Cache.Win8\CacheCapacityScavengingPolicy.cs">
+      <Link>CacheCapacityScavengingPolicy.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.Cache.Win8\CacheConfigSetting.cs">
+      <Link>CacheConfigSetting.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.Cache.Win8\CacheItem.cs">
+      <Link>CacheItem.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.Cache.Win8\CacheItemPriority.cs">
+      <Link>CacheItemPriority.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.Cache.Win8\CacheItemRemovedReason.cs">
+      <Link>CacheItemRemovedReason.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.Cache.Win8\CacheManager.cs">
+      <Link>CacheManager.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.Cache.Win8\CacheManagerExtensions.cs">
+      <Link>CacheManagerExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.Cache.Win8\ExpirationPollTimer.cs">
+      <Link>ExpirationPollTimer.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.Cache.Win8\Expirations\AbsoluteTime.cs">
+      <Link>Expirations\AbsoluteTime.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.Cache.Win8\Expirations\ExtendedFormat.cs">
+      <Link>Expirations\ExtendedFormat.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.Cache.Win8\Expirations\ExtendedFormatTime.cs">
+      <Link>Expirations\ExtendedFormatTime.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.Cache.Win8\Expirations\FileDependency.cs">
+      <Link>Expirations\FileDependency.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.Cache.Win8\Expirations\NeverExpired.cs">
+      <Link>Expirations\NeverExpired.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.Cache.Win8\Expirations\SlidingTime.cs">
+      <Link>Expirations\SlidingTime.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.Cache.Win8\ExpirationTask.cs">
+      <Link>ExpirationTask.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.Cache.Win8\IBackingStore.cs">
+      <Link>IBackingStore.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.Cache.Win8\ICacheItemExpiration.cs">
+      <Link>ICacheItemExpiration.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.Cache.Win8\ICacheItemRefreshAction.cs">
+      <Link>ICacheItemRefreshAction.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.Cache.Win8\ICacheManager.cs">
+      <Link>ICacheManager.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.Cache.Win8\ICacheOperations.cs">
+      <Link>ICacheOperations.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.Cache.Win8\ICacheScavenger.cs">
+      <Link>ICacheScavenger.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.Cache.Win8\PriorityDateComparer.cs">
+      <Link>PriorityDateComparer.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.Cache.Win8\RefreshActionInvoker.cs">
+      <Link>RefreshActionInvoker.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.Cache.Win8\ScavengerTask.cs">
+      <Link>ScavengerTask.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.RestApis.WP8\Shared\StringExtensions.cs">
+      <Link>Share\StringExtensions.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Renren.Components.Async\Renren.Components.Async.csproj">
+      <Project>{73D21C3E-831A-4B71-ACC2-C3386897BB26}</Project>
+      <Name>Renren.Components.Async</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Renren.Components.IO.WP8\Renren.Components.IO.WP8.csproj">
+      <Project>{EA63533C-2081-4CEE-8451-BB77FA831BA1}</Project>
+      <Name>Renren.Components.IO.WP8</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Renren.Components.Tools\Renren.Components.Tools.csproj">
+      <Project>{F9D78622-876A-4815-A3D1-5866635718D2}</Project>
+      <Name>Renren.Components.Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <ProjectExtensions />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

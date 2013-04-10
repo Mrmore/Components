@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/client/2007" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:it="clr-namespace:ImageTools.Controls"
+    xmlns:vsm="clr-namespace:System.Windows;assembly=System.Windows">
+
+    <Style TargetType="it:AnimatedImage">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="it:AnimatedImage">
+                    <Image x:Name="Image" Stretch="{TemplateBinding Stretch}" />
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+</ResourceDictionary>

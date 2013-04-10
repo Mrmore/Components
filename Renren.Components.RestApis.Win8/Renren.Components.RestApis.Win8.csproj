@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CADAABF5-22B6-4AF6-8DB3-B3E33324E334}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Renren.Components.RestApis.Win8</RootNamespace>
+    <AssemblyName>Renren.Components.RestApis.Win8</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <ProjectReference Include="..\Renren.Components.IO.Win8\Renren.Components.IO.Win8.csproj">
+      <Project>{ab643227-43e8-4d1e-a21f-a3334432ab60}</Project>
+      <Name>Renren.Components.IO.Win8</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Renren.Components.Network\Renren.Components.Network.csproj">
+      <Project>{d96b2645-40c3-4f53-bdb3-403b05bb72bf}</Project>
+      <Name>Renren.Components.Network</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Renren.Components.Tools\Renren.Components.Tools.csproj">
+      <Project>{f9d78622-876a-4815-a3d1-5866635718d2}</Project>
+      <Name>Renren.Components.Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Renren.Components.RestApis.WP8\Apis\Client.cs">
+      <Link>Apis\Client.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.RestApis.WP8\Apis\Feed.cs">
+      <Link>Apis\Feed.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.RestApis.WP8\Entities\Album.cs">
+      <Link>Entities\Album.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.RestApis.WP8\Entities\AlbumList.cs">
+      <Link>Entities\AlbumList.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.RestApis.WP8\Entities\Attachment.cs">
+      <Link>Entities\Attachment.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.RestApis.WP8\Entities\Blog.cs">
+      <Link>Entities\Blog.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.RestApis.WP8\Entities\Comment.cs">
+      <Link>Entities\Comment.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.RestApis.WP8\Entities\Feed.cs">
+      <Link>Entities\Feed.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.RestApis.WP8\Entities\FeedLike.cs">
+      <Link>Entities\FeedLike.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.RestApis.WP8\Entities\FeedList.cs">
+      <Link>Entities\FeedList.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.RestApis.WP8\Entities\FeedPlace.cs">
+      <Link>Entities\FeedPlace.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.RestApis.WP8\Entities\ForwardStatus.cs">
+      <Link>Entities\ForwardStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.RestApis.WP8\Entities\FPath.cs">
+      <Link>Entities\FPath.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.RestApis.WP8\Entities\LoginInfo.cs">
+      <Link>Entities\LoginInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.RestApis.WP8\Entities\Photo.cs">
+      <Link>Entities\Photo.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.RestApis.WP8\Entities\PhotoList.cs">
+      <Link>Entities\PhotoList.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.RestApis.WP8\Entities\RenrenRemoteError.cs">
+      <Link>Entities\RenrenRemoteError.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.RestApis.WP8\Entities\Share.cs">
+      <Link>Entities\Share.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.RestApis.WP8\Entities\UserUrls.cs">
+      <Link>Entities\UserUrls.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.RestApis.WP8\Entities\Voice.cs">
+      <Link>Entities\Voice.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.RestApis.WP8\IRemoteError.cs">
+      <Link>IRemoteError.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.RestApis.WP8\RenrenBatchrunRespMessage.cs">
+      <Link>RenrenBatchrunRespMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.RestApis.WP8\RenrenRespMessage.cs">
+      <Link>RenrenRespMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.RestApis.WP8\Shared\MiscExtensions.cs">
+      <Link>Shared\MiscExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.RestApis.WP8\Shared\StringExtensions.cs">
+      <Link>Shared\StringExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\BatchRunBinder.cs">
+      <Link>Shared\BatchRunBinder.cs</Link>
+    </Compile>
+    <Compile Include="Apis\Photo.cs" />
+    <Compile Include="Entities\UploadPhoto.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shared\MessageExtensions.cs" />
+    <Compile Include="SocialSDKContext.Win8.cs" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0' ">
+    <VisualStudioVersion>11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,68 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Renren.Components.Tester.WP8.Views.CachePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    DataContext="{Binding Feeds, Source={StaticResource Locator}}"
+    mc:Ignorable="d"
+    xmlns:it="clr-namespace:ImageTools.Controls;assembly=ImageTools.Controls.WP8"
+    shell:SystemTray.IsVisible="True">
+
+
+    <phone:PhoneApplicationPage.Resources>
+        <it:ImageConverter x:Key="ImageConverter" />
+    </phone:PhoneApplicationPage.Resources>
+
+    <!--LayoutRoot 是包含所有页面内容的根网格-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel 包含应用程序的名称和页标题-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="Renren Comp. Tester" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="New Feed" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - 在此处放置其他内容-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="LoadBtn" Content="Load Feed" Grid.Row="0" Command="{Binding Command}"/>
+            <phone:LongListSelector x:Name="UgcContainer" Grid.Row="1" Margin="12,12,12,0"  ItemsSource="{Binding Items}">
+                <phone:LongListSelector.ItemTemplate>
+                    <DataTemplate>
+                        <Grid HorizontalAlignment="Left" Background="WhiteSmoke"  Height="180" Width="700">
+                            <StackPanel Orientation="Vertical">
+                                <StackPanel Orientation="Horizontal">
+                                    <!--<Image Source="{Binding HeadImg}" Height="80" Width="80" VerticalAlignment="Top" HorizontalAlignment="Left" Stretch="Fill" Margin="15,15,0,0"/>-->
+                                    <it:AnimatedImage Source="{Binding HeadImg, Converter={StaticResource ImageConverter}}" Height="80" Width="80" VerticalAlignment="Top" HorizontalAlignment="Left" Stretch="Fill" Margin="15,15,0,0"/>
+                                    <Grid>
+                                        <StackPanel Orientation="Vertical">
+                                            <TextBlock Text="{Binding UserName}" FontFamily="微软雅黑" FontSize="20" Margin="5,20,0,0" Foreground="Blue" VerticalAlignment="Top"/>
+                                            <TextBlock Text="{Binding Date}" FontFamily="微软雅黑" FontSize="15" Margin="5,30,0,0" Foreground="Red" VerticalAlignment="Bottom"/>
+                                        </StackPanel>
+                                    </Grid>
+                                </StackPanel>
+                                <TextBlock Text="{Binding State}" Foreground="Black" Width="350"  Height="100" Margin="15,5,0,0"  TextWrapping="Wrap" HorizontalAlignment="Left"/>
+                            </StackPanel>
+                        </Grid>
+                    </DataTemplate>
+                </phone:LongListSelector.ItemTemplate>
+            </phone:LongListSelector>
+        </Grid>
+        <ProgressBar IsIndeterminate="{Binding IsChecked}" Margin="0,-60,0,0"/>
+    </Grid>
+
+</phone:PhoneApplicationPage>

@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Renren.Components.Network.Http.HttpAsyncToken&lt;TResponse&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAEQABoAAAEAgJgQAAAwEAAgAAAAACAAACAEAA=</HashCode>
+      <FileName>Http\HttpAsyncToken.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Renren.Components.Network.Http.HttpMockTransition" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQBAEAABAAEAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Http\HttpMockTransition.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Renren.Components.Network.Http.FormdataParam" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Http\HttpRequestMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Renren.Components.Network.Http.FormdataItem" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAABAAAAAQAABAAAA=</HashCode>
+      <FileName>Http\HttpRequestMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Renren.Components.Network.Http.HttpRequestMessage" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAgAAAAAAAEgACgACAAQAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Http\HttpRequestMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Renren.Components.Network.Http.HttpTransferEngine&lt;TTransition&gt;" Collapsed="true">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAEAAAAAEQAAAEABAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Http\HttpTransferEngine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Renren.Components.Network.Http.HttpTransition" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABQAAAAAQAAEAIAAAkAAAAAAAAAAAAAAAAAAgAAsACI=</HashCode>
+      <FileName>Http\HttpTransition.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Renren.Components.Network.Http.HttpTransitionScheduler&lt;TTransition&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAwAAAAAQCgAAAgAAAAIYACAAAAIAAIgIAAAAQAAYAA=</HashCode>
+      <FileName>Http\HttpTransitionScheduler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Renren.Components.Network.Http.TokenArbitrationContainer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQAAAAAAAAAAACBAAAABAAAAAAAAAIAAAAAAABQIAA=</HashCode>
+      <FileName>Http\TokenArbitrationContainer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Renren.Components.Network.NetworkRespMessage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAMAAAAAAAAAAAAAAAAAAAAABAAAAACAAAABAA=</HashCode>
+      <FileName>E:\Devlps\svn.workspace\win8\Labs\Components\Source\Components\Shared\NetworkRespMessage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Renren.Components.Network.TransitionPriority" Collapsed="true">
+    <Position X="6.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAEgAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TransitionPriority.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Renren.Components.Network.TransitionSchedulerConfig" Collapsed="true">
+    <Position X="8.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TransitionSchedulerConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Renren.Components.Network.Http.IHttpAsyncToken" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Http\IHttpAsyncGenericToken.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Renren.Components.Network.INetworkAsyncToken" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAEQABoAAAEAgIAQAAAQEAAAAAAAAAAAACAEAA=</HashCode>
+      <FileName>INetworkAsyncToken.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Renren.Components.Network.INetworkTransition&lt;T, R&gt;" Collapsed="true">
+    <Position X="4.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>INetworkTransition.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Renren.Components.Network.INetworkTransitionScheduler" Collapsed="true">
+    <Position X="6.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAQCAAAAgAAAAAQAAAAAAAAAAAIAAAAAAAIAA=</HashCode>
+      <FileName>INetworkTransitionScheduler.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Renren.Components.Network.ITokenArbitrationContainer&lt;T&gt;" Collapsed="true">
+    <Position X="8.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAABQIAA=</HashCode>
+      <FileName>ITokenArbitrationContainer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Renren.Components.Network.INetworkRespMessage" Collapsed="true">
+    <Position X="3" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAMAAAAAAAAAAAAAAAAAAAAABAAAAACAAAABAA=</HashCode>
+      <FileName>E:\Devlps\svn.workspace\win8\Labs\Components\Source\Components\Shared\INetworkRespMessage.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Renren.Components.Network.Http.HttpMethod" Collapsed="true">
+    <Position X="3" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAEAQAAAAAAAAACgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Http\HttpMethod.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Renren.Components.Network.NetworkStatus" Collapsed="true">
+    <Position X="6.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAIAgAAAAAAAAAAAAAIAABAAAABIAAA=</HashCode>
+      <FileName>NetworkStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Renren.Components.Network.NetworkType" Collapsed="true">
+    <Position X="8.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>NetworkType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Renren.Components.Network.RespStatus" Collapsed="true">
+    <Position X="3" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAEAAAAAAAAAAgIAAA=</HashCode>
+      <FileName>E:\Devlps\svn.workspace\win8\Labs\Components\Source\Components\Shared\INetworkRespMessage.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Renren.Components.Network.NetworkPriority" Collapsed="true">
+    <Position X="4.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAgAAAAAAAAgIAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>TransitionPriority.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

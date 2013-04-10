@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F9D78622-876A-4815-A3D1-5866635718D2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Renren.Components.Tools</RootNamespace>
+    <AssemblyName>Renren.Components.Tools</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile78</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .NET Framework is automatically included -->
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Shared\BindableBase.cs">
+      <Link>BindableBase.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\Extensions.cs">
+      <Link>Extensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\Guarder.cs">
+      <Link>Guarder.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\IInitializeStandardized.cs">
+      <Link>IInitializeStandardized.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\IProgressIndicator.cs">
+      <Link>IProgressIndicator.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\JsonUtilityExt.cs">
+      <Link>JsonUtilityExt.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\TimeExtensions.cs">
+      <Link>TimeExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\Tools\MD5.cs">
+      <Link>MD5.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\WeakAction.cs">
+      <Link>WeakAction.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\WeakActionGeneric.cs">
+      <Link>WeakActionGeneric.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\WinRTXamlToolkit\Common\WeakEventListener.cs">
+      <Link>WeakEventListener.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\WinRTXamlToolkit\Tools\BackgroundTimer.cs">
+      <Link>BackgroundTimer.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\WinRTXamlToolkit\Tools\EnumExtensions.cs">
+      <Link>EnumExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\WinRTXamlToolkit\Tools\TryCatchRetry.cs">
+      <Link>TryCatchRetry.cs</Link>
+    </Compile>
+    <Compile Include="ImageTypeChecker.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

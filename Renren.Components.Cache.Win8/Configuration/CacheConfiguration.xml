@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<cachingConfiguration cacheManagers="DefaultCacheManager">
+  <cacheManagers>
+    <add name="DefaultCacheManager" type="Renren.Components.Caching.CacheManager" 
+        expirationPollFrequencyInSeconds="60" maximumElementsInCacheBeforeScavenging="100"
+        numberToRemoveWhenScavenging="10" backingStoreFolderName="cache" backingStores="StorageBackingStore" />
+    <add name="StorageCacheManager" type="Renren.Components.Caching.CacheManager"
+        expirationPollFrequencyInSeconds="30" maximumElementsInCacheBeforeScavenging="50"
+        numberToRemoveWhenScavenging="10" backingStoreFolderName="cache" backingStores="StorageBackingStore" />
+    <add name="DatabaseCacheManager" type="Renren.Components.Caching.CacheManager"
+        expirationPollFrequencyInSeconds="3600" maximumElementsInCacheBeforeScavenging="1000"
+        numberToRemoveWhenScavenging="10" backingStoreFolderName="cache" backingStores="DatabaseBackingStore" />
+  </cacheManagers>
+  
+  <backingStores>
+    <add name="NullBackingStore" type="Renren.Components.Caching.BackingStore.NullBackingStore" />
+    <add name="StorageBackingStore" type="Renren.Components.Caching.BackingStore.StorageBackingStore" />
+    <add name="DatabaseBackingStore" type="Renren.Components.Caching.BackingStore.DatabaseBackingStore" />
+  </backingStores>
+</cachingConfiguration>

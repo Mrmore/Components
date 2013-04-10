@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="Renren.Components.ImageToolsTester.Win8.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Renren.Components.ImageToolsTester.Win8"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:Name="ImgShow" Content="ImageShow" HorizontalAlignment="Left" Margin="233,172,0,0" VerticalAlignment="Top" Height="60" Width="144" Click="ImgShow_Click"/>
+        <Button x:Name="ImgFilter" Content="Image Filter" HorizontalAlignment="Left" Margin="455,172,0,0" VerticalAlignment="Top" Height="60" Width="144" Click="ImgFilter_Click"/>
+        <Button x:Name="ImgTransform" Content="Image Transform" HorizontalAlignment="Left" Margin="668,172,0,0" VerticalAlignment="Top" Width="153" Height="60" Click="ImgTransform_Click"/>
+        <Button Content="Image Resize" HorizontalAlignment="Left" Margin="233,279,0,0" VerticalAlignment="Top" Height="45" Width="144"/>
+        <Button Content="Image Crop" HorizontalAlignment="Left" Margin="455,279,0,0" VerticalAlignment="Top" Width="144" Height="45"/>
+        <Button Content="Save Image" HorizontalAlignment="Left" Margin="668,279,0,0" VerticalAlignment="Top" Width="153" Height="45"/>
+    </Grid>
+</Page>

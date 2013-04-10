@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D96B2645-40C3-4F53-BDB3-403B05BB72BF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Renren.Components.Network</RootNamespace>
+    <AssemblyName>Renren.Components.Network</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile78</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .NET Framework is automatically included -->
+    <ProjectReference Include="..\Renren.Components.Tools\Renren.Components.Tools.csproj">
+      <Project>{f9d78622-876a-4815-a3d1-5866635718d2}</Project>
+      <Name>Renren.Components.Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Shared\INetworkRespMessage.cs">
+      <Link>Shared\INetworkRespMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\NetworkRespMessage.cs">
+      <Link>Shared\NetworkRespMessage.cs</Link>
+    </Compile>
+    <Compile Include="Http\HttpAsyncToken.cs" />
+    <Compile Include="Http\HttpMethod.cs" />
+    <Compile Include="Http\HttpMockTransition.cs" />
+    <Compile Include="Http\HttpTransferEngine.cs" />
+    <Compile Include="Http\HttpTransition.cs" />
+    <Compile Include="Http\HttpTransitionScheduler.cs" />
+    <Compile Include="Http\HttpRequestMessage.cs" />
+    <Compile Include="TransitionSchedulerConfig.cs" />
+    <Compile Include="Http\TokenArbitrationContainer.cs" />
+    <Compile Include="Http\IHttpAsyncGenericToken.cs" />
+    <Compile Include="INetworkTransition.cs" />
+    <Compile Include="ITokenArbitrationContainer.cs" />
+    <Compile Include="INetworkAsyncToken.cs" />
+    <Compile Include="INetworkTransitionScheduler.cs" />
+    <Compile Include="NetworkStatus.cs" />
+    <Compile Include="NetworkType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TransitionPriority.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

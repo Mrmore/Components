@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5020A72C-3847-43AA-9E59-1519524FB63C}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Renren.Components.Tester.WP8</RootNamespace>
+    <AssemblyName>Renren.Components.Tester.WP8</AssemblyName>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>Renren.Components.Tester.WP8_$(Configuration)_$(Platform).xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>Renren.Components.Tester.WP8.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\Renren.Components.Tester.Win8\ViewModel\FeedViewModel.cs">
+      <Link>ViewModel\FeedViewModel.cs</Link>
+    </Compile>
+    <Compile Include="..\Renren.Components.Tester.Win8\ViewModel\MultiUploadViewModel.cs">
+      <Link>ViewModel\MultiUploadViewModel.cs</Link>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Design\DesignDataService.cs" />
+    <Compile Include="LocalizedStrings.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Converters\BooleanNegationConverter.cs" />
+    <Compile Include="Model\TestCases\ITestCasesProvider.cs" />
+    <Compile Include="Model\TestCases\TestCase.cs" />
+    <Compile Include="Model\TestCases\TestCasesModel.cs" />
+    <Compile Include="Model\TestCases\TestCasesProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\AppResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\AudioUgcViewModel.cs" />
+    <Compile Include="ViewModel\ImageTools\ImageToolsViewModel.cs" />
+    <Compile Include="ViewModel\ImageTools\ImgEditViewModel.cs" />
+    <Compile Include="ViewModel\ImageTools\ImgFiltersViewModel.cs" />
+    <Compile Include="ViewModel\ImageTools\ImgPresentationViewModel.cs" />
+    <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\ViewModelLocator.cs" />
+    <Compile Include="Views\AudioUGCPage.xaml.cs">
+      <DependentUpon>AudioUGCPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CachePage.xaml.cs">
+      <DependentUpon>CachePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ImageTools\ImageToolsPage.xaml.cs" />
+    <Compile Include="Views\MultiUploadPage.xaml.cs">
+      <DependentUpon>MultiUploadPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AudioUGCPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CachePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ImageTools\ImageToolsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\MultiUploadPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\AlignmentGrid.png" />
+    <Content Include="Assets\ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileMedium.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileSmall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\IconicTileMediumLarge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\IconicTileSmall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\book.bmp" />
+    <Content Include="Images\house2.jpg" />
+    <Content Include="Images\meng.jpeg" />
+    <Resource Include="Images\Micky.gif" />
+    <Content Include="Images\wood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="GalaSoft.MvvmLight.Extras.WP8, Version=4.1.24.17387, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Imported\WP8\GalaSoft.MvvmLight.Extras.WP8.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.WP8, Version=4.1.24.17387, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Imported\WP8\GalaSoft.MvvmLight.WP8.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PlayerFramework">
+      <HintPath>..\Imported\WP8\Microsoft.PlayerFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Interactivity, Version=3.9.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Renren.Components.Async\Renren.Components.Async.csproj">
+      <Project>{73D21C3E-831A-4B71-ACC2-C3386897BB26}</Project>
+      <Name>Renren.Components.Async</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Renren.Components.Cache.WP8\Renren.Components.Caching.WP8.csproj">
+      <Project>{3A98F1DC-5AB2-4D05-9F3D-2F3225CD7317}</Project>
+      <Name>Renren.Components.Caching.WP8</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Renren.Components.ImageTools\Renren.Components.ImageTools.WP8\Renren.Components.ImageTools.Controls.WP8\Renren.Components.ImageTools.Controls.WP8.csproj">
+      <Project>{9EE92403-8F65-4DD0-A1C2-7980390249A2}</Project>
+      <Name>Renren.Components.ImageTools.Controls.WP8</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Renren.Components.ImageTools\Renren.Components.ImageTools.WP8\Renren.Components.ImageTools.Filtering.WP8\Renren.Components.ImageTools.Filtering.WP8.csproj">
+      <Project>{D8778858-3FF3-4AA7-B776-31D4550BA174}</Project>
+      <Name>Renren.Components.ImageTools.Filtering.WP8</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Renren.Components.ImageTools\Renren.Components.ImageTools.WP8\Renren.Components.ImageTools.IO.Bmp.WP8\Renren.Components.ImageTools.IO.Bmp.WP8.csproj">
+      <Project>{754F9BA3-6744-4F01-9EA2-2A96113050A1}</Project>
+      <Name>Renren.Components.ImageTools.IO.Bmp.WP8</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Renren.Components.ImageTools\Renren.Components.ImageTools.WP8\Renren.Components.ImageTools.IO.Gif.WP8\Renren.Components.ImageTools.IO.Gif.WP8.csproj">
+      <Project>{B43FFA90-4ABA-4522-95C1-499A1A694F97}</Project>
+      <Name>Renren.Components.ImageTools.IO.Gif.WP8</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Renren.Components.ImageTools\Renren.Components.ImageTools.WP8\Renren.Components.ImageTools.IO.Jpeg.WP8\Renren.Components.ImageTools.IO.Jpeg.WP8.csproj">
+      <Project>{E63BAF60-B0ED-40CF-BF52-ADE81828F29A}</Project>
+      <Name>Renren.Components.ImageTools.IO.Jpeg.WP8</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Renren.Components.ImageTools\Renren.Components.ImageTools.WP8\Renren.Components.ImageTools.IO.Png.WP8\Renren.Components.ImageTools.IO.Png.WP8.csproj">
+      <Project>{FAA61EDB-1ED7-47C9-BAA7-99C654737C04}</Project>
+      <Name>Renren.Components.ImageTools.IO.Png.WP8</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Renren.Components.ImageTools\Renren.Components.ImageTools.WP8\Renren.Components.ImageTools.Utils.WP8\Renren.Components.ImageTools.Utils.WP8.csproj">
+      <Project>{F50CB753-F49A-4F50-B036-B6C1B244B93D}</Project>
+      <Name>Renren.Components.ImageTools.Utils.WP8</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Renren.Components.ImageTools\Renren.Components.ImageTools.WP8\Renren.Components.ImageTools.WP8\Renren.Components.ImageTools.WP8.csproj">
+      <Project>{3DBDC218-1C1A-412E-A538-8AE5A96E1B09}</Project>
+      <Name>Renren.Components.ImageTools.WP8 %28Renren.Components.Images\Renren.Components.ImageTools.WP8\Renren.Components.ImageTools.WP8%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Renren.Components.IO.WP8\Renren.Components.IO.WP8.csproj">
+      <Project>{EA63533C-2081-4CEE-8451-BB77FA831BA1}</Project>
+      <Name>Renren.Components.IO.WP8</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Renren.Components.Network\Renren.Components.Network.csproj">
+      <Project>{D96B2645-40C3-4F53-BDB3-403B05BB72BF}</Project>
+      <Name>Renren.Components.Network</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Renren.Components.RestApis.WP8\Renren.Components.RestApis.WP8.csproj">
+      <Project>{1A61ED60-691C-4CF6-A06B-3F87523C51CF}</Project>
+      <Name>Renren.Components.RestApis.WP8</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Renren.Components.Tools\Renren.Components.Tools.csproj">
+      <Project>{F9D78622-876A-4815-A3D1-5866635718D2}</Project>
+      <Name>Renren.Components.Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

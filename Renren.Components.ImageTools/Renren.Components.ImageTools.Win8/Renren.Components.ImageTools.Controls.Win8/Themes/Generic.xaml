@@ -1,0 +1,42 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ImageTools.Controls">
+
+    <Style TargetType="local:ImageExt">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:ImageExt">
+                    <Image Stretch="{TemplateBinding Stretch}" x:Name="Image"/>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="local:ImageEditorContainer">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:ImageEditorContainer">
+                    <ScrollViewer x:Name="ScrollViewer" Background="White" HorizontalScrollBarVisibility="Visible">
+
+                        <Grid x:Name="SelectionArea" Background="White">
+                            <Border HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10"
+								Width="{Binding ElementName=Image, Mode=OneWay, Path=Width}" 
+								Height="{Binding ElementName=Image, Mode=OneWay, Path=Height}" Background="White">
+
+                                <Grid>
+                                    <local:ImageExt x:Name="Image" Source="{TemplateBinding Source}" AnimationMode="None" />
+
+                                    <Border x:Name="SelectionBorder" Background="#7F4A88E2"
+								        BorderBrush="#B91C4C92" 
+								        BorderThickness="1" 
+								        HorizontalAlignment="Left" VerticalAlignment="Top" />
+                                </Grid>
+                            </Border>
+                        </Grid>
+                    </ScrollViewer>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E63BAF60-B0ED-40CF-BF52-ADE81828F29A}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ImageTools.IO.Jpeg.WP8</RootNamespace>
+    <AssemblyName>ImageTools.IO.Jpeg.WP8</AssemblyName>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <CodeContractsAssemblyMode>1</CodeContractsAssemblyMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeContractsEnableRuntimeChecking>False</CodeContractsEnableRuntimeChecking>
+    <CodeContractsRuntimeOnlyPublicSurface>False</CodeContractsRuntimeOnlyPublicSurface>
+    <CodeContractsRuntimeThrowOnFailure>True</CodeContractsRuntimeThrowOnFailure>
+    <CodeContractsRuntimeCallSiteRequires>False</CodeContractsRuntimeCallSiteRequires>
+    <CodeContractsRuntimeSkipQuantifiers>False</CodeContractsRuntimeSkipQuantifiers>
+    <CodeContractsRunCodeAnalysis>False</CodeContractsRunCodeAnalysis>
+    <CodeContractsNonNullObligations>False</CodeContractsNonNullObligations>
+    <CodeContractsBoundsObligations>False</CodeContractsBoundsObligations>
+    <CodeContractsArithmeticObligations>False</CodeContractsArithmeticObligations>
+    <CodeContractsEnumObligations>False</CodeContractsEnumObligations>
+    <CodeContractsRedundantAssumptions>False</CodeContractsRedundantAssumptions>
+    <CodeContractsInferRequires>False</CodeContractsInferRequires>
+    <CodeContractsInferEnsures>False</CodeContractsInferEnsures>
+    <CodeContractsInferObjectInvariants>False</CodeContractsInferObjectInvariants>
+    <CodeContractsSuggestAssumptions>False</CodeContractsSuggestAssumptions>
+    <CodeContractsSuggestRequires>True</CodeContractsSuggestRequires>
+    <CodeContractsSuggestEnsures>False</CodeContractsSuggestEnsures>
+    <CodeContractsSuggestObjectInvariants>False</CodeContractsSuggestObjectInvariants>
+    <CodeContractsRunInBackground>True</CodeContractsRunInBackground>
+    <CodeContractsShowSquigglies>True</CodeContractsShowSquigglies>
+    <CodeContractsUseBaseLine>False</CodeContractsUseBaseLine>
+    <CodeContractsEmitXMLDocs>False</CodeContractsEmitXMLDocs>
+    <CodeContractsCustomRewriterAssembly />
+    <CodeContractsCustomRewriterClass />
+    <CodeContractsLibPaths />
+    <CodeContractsExtraRewriteOptions />
+    <CodeContractsExtraAnalysisOptions />
+    <CodeContractsBaseLineFile />
+    <CodeContractsCacheAnalysisResults>True</CodeContractsCacheAnalysisResults>
+    <CodeContractsRuntimeCheckingLevel>Full</CodeContractsRuntimeCheckingLevel>
+    <CodeContractsReferenceAssembly>DoNotBuild</CodeContractsReferenceAssembly>
+    <CodeContractsAnalysisWarningLevel>0</CodeContractsAnalysisWarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\FluxJpeg.Core\DCT.cs">
+      <Link>FluxJpeg.Core\DCT.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\FluxJpeg.Core\DecodedJpeg.cs">
+      <Link>FluxJpeg.Core\DecodedJpeg.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\FluxJpeg.Core\Decoder\HuffmanTable.cs">
+      <Link>FluxJpeg.Core\Decoder\HuffmanTable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\FluxJpeg.Core\Decoder\JpegComponent.cs">
+      <Link>FluxJpeg.Core\Decoder\JpegComponent.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\FluxJpeg.Core\Decoder\JpegDecoder.cs">
+      <Link>FluxJpeg.Core\Decoder\JpegDecoder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\FluxJpeg.Core\Decoder\JpegFrame.cs">
+      <Link>FluxJpeg.Core\Decoder\JpegFrame.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\FluxJpeg.Core\Decoder\JpegHuffmanTable.cs">
+      <Link>FluxJpeg.Core\Decoder\JpegHuffmanTable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\FluxJpeg.Core\Decoder\JpegQuantizationTable.cs">
+      <Link>FluxJpeg.Core\Decoder\JpegQuantizationTable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\FluxJpeg.Core\Decoder\JpegScan.cs">
+      <Link>FluxJpeg.Core\Decoder\JpegScan.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\FluxJpeg.Core\Encoder\JpegEncoder.cs">
+      <Link>FluxJpeg.Core\Encoder\JpegEncoder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\FluxJpeg.Core\FDCT.cs">
+      <Link>FluxJpeg.Core\FDCT.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\FluxJpeg.Core\Image.cs">
+      <Link>FluxJpeg.Core\Image.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\FluxJpeg.Core\IO\BinaryReader.cs">
+      <Link>FluxJpeg.Core\IO\BinaryReader.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\FluxJpeg.Core\IO\BinaryWriter.cs">
+      <Link>FluxJpeg.Core\IO\BinaryWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\FluxJpeg.Core\IO\JpegBinaryReader.cs">
+      <Link>FluxJpeg.Core\IO\JpegBinaryReader.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\FluxJpeg.Core\JpegMarker.cs">
+      <Link>FluxJpeg.Core\JpegMarker.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\FluxJpeg.Core\YCbCr.cs">
+      <Link>FluxJpeg.Core\YCbCr.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\FluxJpeg.Core\ZigZag.cs">
+      <Link>FluxJpeg.Core\ZigZag.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\JpegDecoder.cs">
+      <Link>JpegDecoder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\JpegEncoder.cs">
+      <Link>JpegEncoder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\BitmapDestination.cs">
+      <Link>LibJpeg\BitmapDestination.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\BitStream.cs">
+      <Link>LibJpeg\BitStream.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\DensityUnit.cs">
+      <Link>LibJpeg\Classic\DensityUnit.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\bitread_perm_state.cs">
+      <Link>LibJpeg\Classic\Internal\bitread_perm_state.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\bitread_working_state.cs">
+      <Link>LibJpeg\Classic\Internal\bitread_working_state.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\ComponentBuffer.cs">
+      <Link>LibJpeg\Classic\Internal\ComponentBuffer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\d_derived_tbl.cs">
+      <Link>LibJpeg\Classic\Internal\d_derived_tbl.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\huff_entropy_decoder.cs">
+      <Link>LibJpeg\Classic\Internal\huff_entropy_decoder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\huff_entropy_encoder.cs">
+      <Link>LibJpeg\Classic\Internal\huff_entropy_encoder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\JpegUtils.cs">
+      <Link>LibJpeg\Classic\Internal\JpegUtils.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\jpeg_color_converter.cs">
+      <Link>LibJpeg\Classic\Internal\jpeg_color_converter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\jpeg_color_deconverter.cs">
+      <Link>LibJpeg\Classic\Internal\jpeg_color_deconverter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\jpeg_color_quantizer.cs">
+      <Link>LibJpeg\Classic\Internal\jpeg_color_quantizer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\jpeg_comp_master.cs">
+      <Link>LibJpeg\Classic\Internal\jpeg_comp_master.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\jpeg_c_coef_controller.cs">
+      <Link>LibJpeg\Classic\Internal\jpeg_c_coef_controller.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\jpeg_c_main_controller.cs">
+      <Link>LibJpeg\Classic\Internal\jpeg_c_main_controller.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\jpeg_c_prep_controller.cs">
+      <Link>LibJpeg\Classic\Internal\jpeg_c_prep_controller.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\jpeg_decomp_master.cs">
+      <Link>LibJpeg\Classic\Internal\jpeg_decomp_master.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\jpeg_downsampler.cs">
+      <Link>LibJpeg\Classic\Internal\jpeg_downsampler.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\jpeg_d_coef_controller.cs">
+      <Link>LibJpeg\Classic\Internal\jpeg_d_coef_controller.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\jpeg_d_main_controller.cs">
+      <Link>LibJpeg\Classic\Internal\jpeg_d_main_controller.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\jpeg_d_post_controller.cs">
+      <Link>LibJpeg\Classic\Internal\jpeg_d_post_controller.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\jpeg_entropy_decoder.cs">
+      <Link>LibJpeg\Classic\Internal\jpeg_entropy_decoder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\jpeg_entropy_encoder.cs">
+      <Link>LibJpeg\Classic\Internal\jpeg_entropy_encoder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\jpeg_forward_dct.cs">
+      <Link>LibJpeg\Classic\Internal\jpeg_forward_dct.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\jpeg_input_controller.cs">
+      <Link>LibJpeg\Classic\Internal\jpeg_input_controller.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\jpeg_inverse_dct.cs">
+      <Link>LibJpeg\Classic\Internal\jpeg_inverse_dct.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\jpeg_marker_reader.cs">
+      <Link>LibJpeg\Classic\Internal\jpeg_marker_reader.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\jpeg_marker_writer.cs">
+      <Link>LibJpeg\Classic\Internal\jpeg_marker_writer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\jpeg_scan_info.cs">
+      <Link>LibJpeg\Classic\Internal\jpeg_scan_info.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\jpeg_upsampler.cs">
+      <Link>LibJpeg\Classic\Internal\jpeg_upsampler.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\J_BUF_MODE.cs">
+      <Link>LibJpeg\Classic\Internal\J_BUF_MODE.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\my_1pass_cquantizer.cs">
+      <Link>LibJpeg\Classic\Internal\my_1pass_cquantizer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\my_2pass_cquantizer.cs">
+      <Link>LibJpeg\Classic\Internal\my_2pass_cquantizer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\my_c_coef_controller.cs">
+      <Link>LibJpeg\Classic\Internal\my_c_coef_controller.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\my_destination_mgr.cs">
+      <Link>LibJpeg\Classic\Internal\my_destination_mgr.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\my_merged_upsampler.cs">
+      <Link>LibJpeg\Classic\Internal\my_merged_upsampler.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\my_source_mgr.cs">
+      <Link>LibJpeg\Classic\Internal\my_source_mgr.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\my_upsampler.cs">
+      <Link>LibJpeg\Classic\Internal\my_upsampler.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\phuff_entropy_decoder.cs">
+      <Link>LibJpeg\Classic\Internal\phuff_entropy_decoder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\Internal\phuff_entropy_encoder.cs">
+      <Link>LibJpeg\Classic\Internal\phuff_entropy_encoder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\JBLOCK.cs">
+      <Link>LibJpeg\Classic\JBLOCK.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\JHUFF_TBL.cs">
+      <Link>LibJpeg\Classic\JHUFF_TBL.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\JpegConstants.cs">
+      <Link>LibJpeg\Classic\JpegConstants.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\jpeg_common_struct.cs">
+      <Link>LibJpeg\Classic\jpeg_common_struct.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\jpeg_component_info.cs">
+      <Link>LibJpeg\Classic\jpeg_component_info.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\jpeg_compress_struct.cs">
+      <Link>LibJpeg\Classic\jpeg_compress_struct.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\jpeg_decompress_struct.cs">
+      <Link>LibJpeg\Classic\jpeg_decompress_struct.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\jpeg_destination_mgr.cs">
+      <Link>LibJpeg\Classic\jpeg_destination_mgr.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\jpeg_error_mgr.cs">
+      <Link>LibJpeg\Classic\jpeg_error_mgr.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\JPEG_MARKER.cs">
+      <Link>LibJpeg\Classic\JPEG_MARKER.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\jpeg_marker_struct.cs">
+      <Link>LibJpeg\Classic\jpeg_marker_struct.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\jpeg_progress_mgr.cs">
+      <Link>LibJpeg\Classic\jpeg_progress_mgr.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\jpeg_source_mgr.cs">
+      <Link>LibJpeg\Classic\jpeg_source_mgr.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\JQUANT_TBL.cs">
+      <Link>LibJpeg\Classic\JQUANT_TBL.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\jvirt_array.cs">
+      <Link>LibJpeg\Classic\jvirt_array.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\J_COLOR_SPACE.cs">
+      <Link>LibJpeg\Classic\J_COLOR_SPACE.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\J_DCT_METHOD.cs">
+      <Link>LibJpeg\Classic\J_DCT_METHOD.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\J_DITHER_MODE.cs">
+      <Link>LibJpeg\Classic\J_DITHER_MODE.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\J_MESSAGE_CODE.cs">
+      <Link>LibJpeg\Classic\J_MESSAGE_CODE.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Classic\ReadResult.cs">
+      <Link>LibJpeg\Classic\ReadResult.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\CompressionParameters.cs">
+      <Link>LibJpeg\CompressionParameters.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\DecompressionParameters.cs">
+      <Link>LibJpeg\DecompressionParameters.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\DecompressorToJpegImage.cs">
+      <Link>LibJpeg\DecompressorToJpegImage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Enumerations.cs">
+      <Link>LibJpeg\Enumerations.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\IDecompressDestination.cs">
+      <Link>LibJpeg\IDecompressDestination.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\IRawImage.cs">
+      <Link>LibJpeg\IRawImage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Jpeg.cs">
+      <Link>LibJpeg\Jpeg.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\JpegImage.cs">
+      <Link>LibJpeg\JpegImage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\RawImage.cs">
+      <Link>LibJpeg\RawImage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Sample.cs">
+      <Link>LibJpeg\Sample.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\SampleRow.cs">
+      <Link>LibJpeg\SampleRow.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ImageToolsShared\ImageTools.IO.Jpeg\LibJpeg\Utils.cs">
+      <Link>LibJpeg\Utils.cs</Link>
+    </Compile>
+    <Compile Include="LibJpeg\Classic\Internal\my_trans_c_coef_controller.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Renren.Components.ImageTools.WP8\Renren.Components.ImageTools.WP8.csproj">
+      <Project>{3DBDC218-1C1A-412E-A538-8AE5A96E1B09}</Project>
+      <Name>Renren.Components.ImageTools.WP8</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <ProjectExtensions />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
